@@ -14,7 +14,7 @@
 
 Connect Four is a popular game played by kids and adults alike. The rules are simple, yet requires strategy and planning to beat the opponent. 
 
-(Also, can we all agree that Beyonce let Kanye win?)
+Also, can we all agree that Beyonce let Kanye win?
 
 
 #### *Technologies Used*
