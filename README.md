@@ -26,30 +26,27 @@ Also, can we all agree that Beyonce let Kanye win?
 #### *Getting Started*
 The basic requirements for this game have been broken into smaller tasks, which can be found in this [Trello Board](https://trello.com/b/GFrzRcsE/ysherap-project-1) or broadly summarized in the following section.
 
-**Project MVP**
+#### *Project MVP*
 
 *Must Have*
-*Ability for 2 players to play the game
-*Ability for players to alternate turns
-*Ability to easily know whether and which player has won and if the game is a tie
-*Ability to restart the game
+* Ability for 2 players to play the game
+* Ability for players to alternate turns
+* Ability to easily know:
+  * whether and which player has won
+  * if the game is a tie
+  * the current player
+* Ability to restart the game
 
 *Should Have*
 * An appealing and well-designed site
 
 *Could Have*
-* Ability for a player to compete with the computer 
-
+* Ability for a player to compete with the computer
+* A score board 
 
 
 #### *Future Updates*
 - [ ] An AI component that allows a player to play with the computer
-
-*
-*
-*
-*
-*
 
 ***
 
