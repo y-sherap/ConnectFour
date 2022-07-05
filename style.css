@@ -1,0 +1,39 @@
+body {
+background-color: rgb(127, 172, 177);
+
+} 
+
+header {
+font-size: 50px;
+text-align: center;
+}
+
+h2 {
+
+} 
+.board{
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat (7, 110px);
+  grid-template-rows: repeat (6, 110px);  */
+  width: 820px;
+  height: 700px;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: rgb(73, 56, 10); 
+  gap: 5px 5px;
+  padding: 10px;
+} 
+
+.cell{
+  /* border: 5px solid rgb(0, 0, 0); */
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  /* outline: 3px solid black; */
+  height: 110px;
+  width: 110px;
+}  
+
+.btn {
+
+}
