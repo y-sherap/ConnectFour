@@ -1,5 +1,6 @@
 body {
-background-color: rgb(127, 172, 177);
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255)
 
 } 
 
@@ -16,11 +17,11 @@ h2 {
   flex-wrap: wrap;
   /* grid-template-columns: repeat (7, 110px);
   grid-template-rows: repeat (6, 110px);  */
-  width: 820px;
-  height: 700px;
+  width: 600px;
+  height: 510px;
   margin: 0 auto;
   justify-content: center;
-  background-color: rgb(73, 56, 10); 
+  background-color: rgb(53, 7, 204); 
   gap: 5px 5px;
   padding: 10px;
 } 
@@ -30,8 +31,8 @@ h2 {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   /* outline: 3px solid black; */
-  height: 110px;
-  width: 110px;
+  height: 75px;
+  width: 75px;
 }  
 
 .btn {

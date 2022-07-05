@@ -2,10 +2,23 @@
 const gameBoard = document.querySelector(".board")
 const cell = document.querySelectorAll(".cell")
 const playAgain = document.querySelector("button")
-const gameStatus = document.querySelector(".gameStatus")
+const gameStatusMessage = document.querySelector(".gameStatus")
 
 
-let currentPlayer = Y
+const playerY = 'R'
+const playerR = 'B'
+let currentPlayer = PlayerR
+let possibleClicks = 0
+
+let board = [
+  '', '', '', '', '', '', '',
+  '', '', '', '', '', '', '',
+  '', '', '', '', '', '', '',
+  '', '', '', '', '', '', '',
+  '', '', '', '', '', '', '',
+  '', '', '', '', '', '', '',
+  ]
+
 
 
 const winningConditions = [
@@ -78,3 +91,16 @@ const winningConditions = [
   [37, 38, 39, 40],
   [38, 39, 40, 41]
 ]
+
+
+
+
+
+// use for loop here to add an on click 
+
+
+
+let switchPlayer = () => {
+  currentPlayer = currentPlayer === 'R' ? 'B' : 'R'
+// winner/draw messages here
+}
