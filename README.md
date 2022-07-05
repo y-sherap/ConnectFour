@@ -2,11 +2,11 @@
 ## Date: 07/03/2022
 #### By: Yangtsel Sherap
 
-** [GitHub](https://github.com/y-sherap) | [LinkedIn](https://www.linkedin.com/in/yangtsel-sherap-51605947/)**
+**[GitHub](https://github.com/y-sherap) | [LinkedIn](https://www.linkedin.com/in/yangtsel-sherap-51605947/)**
 
 ***
 
-![Connect Four] (https://preview.redd.it/gl63rh6pj4h51.jpg?auto=webp&s=2b129ab957e4060bdfd7400d909afc2cb8e0ed1f)
+![Connect Four](https://preview.redd.it/gl63rh6pj4h51.jpg?auto=webp&s=2b129ab957e4060bdfd7400d909afc2cb8e0ed1f)
 
 ***
 
@@ -22,7 +22,7 @@ Connect Four is a popular game played by kids and adults alike.
 
 
 #### *Getting Started*
-The basic requirements for this game have been broken down into tasks, which can be found in this [Trello Board] (https://trello.com/b/GFrzRcsE/ysherap-project-1).  
+The basic requirements for this game have been broken down into tasks, which can be found in this [Trello Board](https://trello.com/b/GFrzRcsE/ysherap-project-1).  
 
 ***
 
