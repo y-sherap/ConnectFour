@@ -9,12 +9,13 @@ let isPlayer1 = true;
 let isGameOver = false;
 // starting set that will populate when players click on individual cells
 let board = [
-  "", "", "", "", "", "", "",
-  "", "", "", "", "", "", "",
-  "", "", "", "", "", "", "",
-  "", "", "", "", "", "", "",
-  "", "", "", "", "", "", "",
-  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "", 
+  "", "", "", "", "", "", "", 
+  "", "", "", "", "", "", "", 
+  "", "", "", "", "", "", "", 
+  "", "", "", "", "", "", "", 
+  "", "", "", "", "", "", "", 
+  "", "", "", "", "", "", "", 
 ];
 
 const winningConditions = [
@@ -88,19 +89,13 @@ const winningConditions = [
   [38, 39, 40, 41],
 ];
 
-// // functions to:
-// - alternate players
-// - ensure players can place tokens starting from row
-
-
-
 let showWinningMessage = (winningMessage) => {
   gameStatusMessage.innerText = winningMessage
   isGameOver = true
-  // template message
+  // message placeholder
 };
 
-// ! = opposite player. Checking to see whether Player1 is playing
+// ! = opposite. Checking to see whether Player1 is playing
 let alternatePlayer = () => {
   isPlayer1 = !isPlayer1;
 };
@@ -143,11 +138,31 @@ const checkWinningConditions = (indexOfClickedCell) => {
     // set the value of winner
     if (conditionOne && conditionTwo && conditionThree && conditionFour) {
       winner = "Player 1";
-      isGameOver = true
     } else if (conditionOne === false && conditionTwo === false && conditionThree === false && conditionFour === false) {
         winner = "Player 2";
-        isGameOver = true
     }
-    // every item in the array we need to check for a set of trues and falses. true = player 1
+    // every item in the array we need to check for a se3t of trues and flases. true = player 1
   });
+  // we'll iterate through the array to check which player it was that clicked on the cell and it would put out a true or false
+  if (winner) {
+    // display winner here
+    const winnerMessage = `${winner} is the winner!`
+    showWinningMessage(winnerMessage)
+  } else {
+    let checkDraw = board.find(element => element === "")
+// checks if there's an empty string on the board
+      if (checkDraw) {
+        showWinningMessage ("It's a draw!")
+      }
+  }
+
+};
+
+// add an event listener so that when the button is clicked, board is reset
+
+const resetBoard = () => {
+  window.location.reload()
 }
+
+
+button.addEventListener('click', resetBoard)

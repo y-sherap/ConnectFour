@@ -1,12 +1,20 @@
+html, body {
+  margin: 0;
+  height: 100%
+}
+
 body {
 background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255)
-
+color: rgb(255, 255, 255);
+font-family: 'Space Mono', monospace; 
 } 
 
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
 header {
-font-size: 50px;
-text-align: center;
+
 }
 
 h2 {
@@ -18,12 +26,11 @@ h2 {
   /* grid-template-columns: repeat (7, 110px);
   grid-template-rows: repeat (6, 110px);  */
   width: 600px;
-  height: 510px;
+  height: 520px;
   margin: 0 auto;
   justify-content: center;
-  background-color: rgb(53, 7, 204); 
+  background-color: rgb(0, 0, 0); 
   gap: 5px 5px;
-  padding: 10px;
 } 
 
 .cell{
@@ -37,11 +44,13 @@ h2 {
 }  
 
 .btn {
-
-}
-
-.piece {
+  background-color: rgb(185, 247, 93);
+  border: rgb(185, 247, 93);
+  font-family: 'Space Mono', monospace;
+  align-self: flex-end;
+  font-size: 14px;
+  padding: 20px 10px;
   border-radius: 50%;
-  background-color: red;
-  flex-grow: 1;
+  cursor: pointer;
 }
+
