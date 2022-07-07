@@ -7,6 +7,7 @@ const token = document.querySelector(".token");
 
 let isPlayer1 = true;
 let isGameOver = false;
+
 // starting set that will populate when players click on individual cells
 let board = [
   "", "", "", "", "", "", "", 
@@ -89,16 +90,27 @@ const winningConditions = [
   [38, 39, 40, 41],
 ];
 
+// document.addEventListener("load", () => {
+//   disableCells(false);
+// });
+
 let showWinningMessage = (winningMessage) => {
   gameStatusMessage.innerText = winningMessage
   isGameOver = true
+  
+  
   // message placeholder
 };
+
+let currentPlayerMessage = (currentPlayerMsg) => {
+  gameStatusMessage.innerText = currentPlayerMsg
+}
 
 // ! = opposite. Checking to see whether Player1 is playing
 let alternatePlayer = () => {
   isPlayer1 = !isPlayer1;
 };
+
 
 for (let i = 0; i < cell.length; i++) {
   cell[i].addEventListener("click", (e) => {
@@ -109,11 +121,12 @@ for (let i = 0; i < cell.length; i++) {
     let neighborCellHasValue = i > 34 || hasValue
     // if it doesn't have an empty string, then neighbor Cell does have a value.  Neighbor celll is the cell underneath the clicked cell. 
 
-    if (e.target.dataset.cellTaken || !neighborCellHasValue) {
+    if (e.target.dataset.cellTaken || !neighborCellHasValue || isGameOver) {
       return;
 
       // if current cell we're clicking on has a value/if it's a true, or if a neighbor cell has value, we will return. can't double click
     }
+    currentPlayerMessage(`Player ${isPlayer1 ? "One's" : "Two's"} Turn`)
     checkWinningConditions(i);
     e.target.style.backgroundColor = isPlayer1 ? "red" : "yellow";
     alternatePlayer();
@@ -122,6 +135,10 @@ for (let i = 0; i < cell.length; i++) {
     e.target.dataset.cellTaken = true;
   });
 }
+
+// it'll be either true or false. True/ActiveNo = disabled. users cannot click on this.
+
+
 
 //  everytime a useer clicks into a cell, we want to log the index of that cell into the variable "board" amd check if one of the winning conditions were met
 const checkWinningConditions = (indexOfClickedCell) => {
@@ -138,30 +155,35 @@ const checkWinningConditions = (indexOfClickedCell) => {
     // set the value of winner
     if (conditionOne && conditionTwo && conditionThree && conditionFour) {
       winner = "Player 1";
+      // disableCells();
     } else if (conditionOne === false && conditionTwo === false && conditionThree === false && conditionFour === false) {
         winner = "Player 2";
+        // disableCells();
     }
     // every item in the array we need to check for a se3t of trues and flases. true = player 1
   });
   // we'll iterate through the array to check which player it was that clicked on the cell and it would put out a true or false
   if (winner) {
     // display winner here
-    const winnerMessage = `${winner} is the winner!`
-    showWinningMessage(winnerMessage)
+    const winnerMessage = `${winner} wins!`
+    showWinningMessage(winnerMessage);
+    // disableCells();
   } else {
     let checkDraw = board.find(element => element === "")
 // checks if there's an empty string on the board
       if (checkDraw) {
-        showWinningMessage ("It's a draw!")
+        showWinningMessage ("It's a draw!");
+        // disableCells();
       }
   }
+  
 
 };
 
 // add an event listener so that when the button is clicked, board is reset
 
 const resetBoard = () => {
-  window.location.reload()
+  window.location.reload();
 }
 
 
