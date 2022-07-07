@@ -1,25 +1,21 @@
+const gameBoard = document.querySelector(".board");
+const cell = document.querySelectorAll(".cell");
+const button = document.querySelector("button");
+const gameStatusMessage = document.querySelector(".gameStatus");
+const playerTurn = document.querySelector(".playerTurn");
+const token = document.querySelector(".token");
 
-const gameBoard = document.querySelector(".board")
-const cell = document.querySelectorAll(".cell")
-const playAgain = document.querySelector("button")
-const gameStatusMessage = document.querySelector(".gameStatus")
-
-
-const playerY = 'R'
-const playerR = 'B'
-let currentPlayer = PlayerR
-let possibleClicks = 0
-
+let isPlayer1 = true;
+let isGameOver = false;
+// starting set that will populate when players click on individual cells
 let board = [
-  '', '', '', '', '', '', '',
-  '', '', '', '', '', '', '',
-  '', '', '', '', '', '', '',
-  '', '', '', '', '', '', '',
-  '', '', '', '', '', '', '',
-  '', '', '', '', '', '', '',
-  ]
-
-
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+  "", "", "", "", "", "", "",
+];
 
 const winningConditions = [
   [0, 1, 2, 3],
@@ -89,18 +85,69 @@ const winningConditions = [
   [35, 36, 37, 38],
   [36, 37, 38, 39],
   [37, 38, 39, 40],
-  [38, 39, 40, 41]
-]
+  [38, 39, 40, 41],
+];
+
+// // functions to:
+// - alternate players
+// - ensure players can place tokens starting from row
 
 
 
+let showWinningMessage = (winningMessage) => {
+  gameStatusMessage.innerText = winningMessage
+  isGameOver = true
+  // template message
+};
 
+// ! = opposite player. Checking to see whether Player1 is playing
+let alternatePlayer = () => {
+  isPlayer1 = !isPlayer1;
+};
 
-// use for loop here to add an on click 
+for (let i = 0; i < cell.length; i++) {
+  cell[i].addEventListener("click", (e) => {
+    let numberOfColumns = 7
+// needs to determine neighboring cell
+    let neighborCell = i + numberOfColumns
+    let hasValue = board[neighborCell] !== ""
+    let neighborCellHasValue = i > 34 || hasValue
+    // if it doesn't have an empty string, then neighbor Cell does have a value.  Neighbor celll is the cell underneath the clicked cell. 
 
+    if (e.target.dataset.cellTaken || !neighborCellHasValue) {
+      return;
 
+      // if current cell we're clicking on has a value/if it's a true, or if a neighbor cell has value, we will return. can't double click
+    }
+    checkWinningConditions(i);
+    e.target.style.backgroundColor = isPlayer1 ? "red" : "yellow";
+    alternatePlayer();
 
-let switchPlayer = () => {
-  currentPlayer = currentPlayer === 'R' ? 'B' : 'R'
-// winner/draw messages here
+    // create a function/setter that checks whether a cell already has a color/clicked
+    e.target.dataset.cellTaken = true;
+  });
+}
+
+//  everytime a useer clicks into a cell, we want to log the index of that cell into the variable "board" amd check if one of the winning conditions were met
+const checkWinningConditions = (indexOfClickedCell) => {
+  board[indexOfClickedCell] = isPlayer1;
+
+  let winner;
+
+  winningConditions.forEach((winningCondition) => {
+    const conditionOne = board[winningCondition[0]];
+    const conditionTwo = board[winningCondition[1]];
+    const conditionThree = board[winningCondition[2]];
+    const conditionFour = board[winningCondition[3]];
+
+    // set the value of winner
+    if (conditionOne && conditionTwo && conditionThree && conditionFour) {
+      winner = "Player 1";
+      isGameOver = true
+    } else if (conditionOne === false && conditionTwo === false && conditionThree === false && conditionFour === false) {
+        winner = "Player 2";
+        isGameOver = true
+    }
+    // every item in the array we need to check for a set of trues and falses. true = player 1
+  });
 }

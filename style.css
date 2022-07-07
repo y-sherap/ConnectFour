@@ -33,8 +33,15 @@ h2 {
   /* outline: 3px solid black; */
   height: 75px;
   width: 75px;
+  cursor: pointer; 
 }  
 
 .btn {
 
+}
+
+.piece {
+  border-radius: 50%;
+  background-color: red;
+  flex-grow: 1;
 }
