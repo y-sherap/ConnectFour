@@ -5,7 +5,7 @@
 **[GitHub](https://github.com/y-sherap) | [LinkedIn](https://www.linkedin.com/in/yangtsel-sherap-51605947/)**
 
 ***
-![Connect Four](https://user-images.githubusercontent.com/91999168/178035924-2982d044-9df7-4c26-b036-55df69c4e760.jpeg)
+![Connect Four](https://cdn.shoplightspeed.com/shops/632266/files/25098839/image.jpg)
 
 ***
 
