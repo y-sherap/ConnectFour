@@ -5,9 +5,8 @@
 **[GitHub](https://github.com/y-sherap) | [LinkedIn](https://www.linkedin.com/in/yangtsel-sherap-51605947/)**
 
 ***
-![Connect Four](https://preview.redd.it/gl63rh6pj4h51.jpg?auto=webp&s=2b129ab957e4060bdfd7400d909afc2cb8e0ed1f)
 
-Can we all agree that Beyonce let Kanye win?
+https://user-images.githubusercontent.com/91999168/178034955-4632a152-0944-44da-8004-12fe10aa1528.mov
 
 ***
 
@@ -51,12 +50,7 @@ The game comprises:
 * A dyanmic subheader that displays the following:
   * Current player, *"Player One's Turn"*
   * Winner, *"Player Two Wins!"*
-  * If the game is a Draw, *"It's a draw"
-
-Here's a rundown of the full game:
-
-
-
+  * If the game is a Draw, *"It's a draw"*
 
 ***
 
@@ -69,4 +63,10 @@ Here's a rundown of the full game:
 #### ***Credits***
 * ![CodePen](https://codepen.io/bunajianke/pen/NWWdYQJ) for title animation
 
+#### ***Connect Four In Action***
 ***
+
+![Connect Four](https://preview.redd.it/gl63rh6pj4h51.jpg?auto=webp&s=2b129ab957e4060bdfd7400d909afc2cb8e0ed1f)
+
+Can we all agree that Beyonce let Kanye win?
+
