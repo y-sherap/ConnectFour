@@ -44,10 +44,6 @@ The basic requirements for this game have been broken into smaller tasks, which 
 * Ability for a player to compete with the computer
 * A score board 
 
-
-#### *Future Updates*
-- [ ] An AI component that allows a player to play with the computer
-
 ***
 
 #### ***Credits***
