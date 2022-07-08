@@ -16,7 +16,7 @@ Connect Four is a popular game played by kids and adults alike. The rules are si
 
 The basic requirements for this project have been broken into smaller technical tasks, which can be found in this [Trello Board](https://trello.com/b/GFrzRcsE/ysherap-project-1) and broadly summarized in the following section.
 
-### *Project MVP*
+#### *Project MVP*
 
 *Must Have*
 * Ability for 2 players to play the game
@@ -35,12 +35,12 @@ The basic requirements for this project have been broken into smaller technical 
 * Ability for a player to compete with the computer
 * A score board 
 
-#### *Technologies Used*
+### *Technologies Used*
 1. Visual Studio Code to run HTML, CSS, Javascript
 2. Trello to manage project requirements 
 3. Google Chrome to access the game 
 
-#### *Project Overview*
+### *Project Overview*
 I created this game during the third week of my Software Engineering Immersive course through General Assembly. Prior to enrolling in this program, I had little to no experience with HTML, CSS, and Javascript. I wanted to use this project to gain a foundational understanding of functions, loops, and event listeners, all of which have been incorporated into my code. After a week of writing, deleting, staring at the wall, and rewriting my code, I feel more confident in my abilities and am looking forward to building on this knowledge. 
 
 The game comprises:
@@ -54,16 +54,16 @@ The game comprises:
 
 ***
 
-#### ***Future Updates***
+### ***Future Updates***
 [] AI component
 [] Score Board
 [] Cohesive color pattern
 [] 3-D board 
 
-#### ***Credits***
+### ***Credits***
 * ![CodePen](https://codepen.io/bunajianke/pen/NWWdYQJ) for title animation
 
-#### ***Connect Four In Action***
+### ***Connect Four In Action***
 ***
 
 ![Connect Four](https://preview.redd.it/gl63rh6pj4h51.jpg?auto=webp&s=2b129ab957e4060bdfd7400d909afc2cb8e0ed1f)
