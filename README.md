@@ -58,10 +58,10 @@ https://user-images.githubusercontent.com/91999168/178034955-4632a152-0944-44da-
 ***
 
 ### ***Future Updates***
--[ ] AI component
--[ ] Score Board
--[ ] Cohesive color pattern
--[ ] 3-D board 
+- [ ] AI Component
+- [ ] Score Board
+- [ ] Cohesive Color Pattern
+- [ ] 3-D Board
 
 ### ***Credits***
 * ![CodePen](https://codepen.io/bunajianke/pen/NWWdYQJ) for title animation
