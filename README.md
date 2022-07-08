@@ -65,6 +65,10 @@ https://user-images.githubusercontent.com/91999168/178034955-4632a152-0944-44da-
 
 ### ***Credits***
 * ![CodePen](https://codepen.io/bunajianke/pen/NWWdYQJ) for title animation
+* Stack Overflow
+* W3Schools
+* Youtube
+* MDN Web Docs
 
 ***
 ### ***Connect Four In Action***
