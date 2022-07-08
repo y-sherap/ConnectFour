@@ -65,9 +65,9 @@ h1 {
     border-color: #1111ad;
     background-color: rgb(37, 15, 181);
     box-shadow:
-      0 0 80px 30px rgb(50, 42, 42),  /* inner white */
-      0 0 200px 100px rgb(20, 9, 132), /* middle magenta */
-      0 0 140px 90px #0ff; /* outer cyan */
+      0 0 80px 30px rgb(33, 29, 29),  /* inner white */
+      0 0 200px 100px rgb(89, 33, 125), /* middle magenta */
+      0 0 140px 90px #0ff; 
     gap: 5px 5px;
     padding: 1rem .5rem;
   } 
@@ -87,7 +87,7 @@ h1 {
   padding: 1rem;
   font-size: 1rem;
   color: #fff;
-  background: rgb(145, 140, 198);
+  background: rgb(152, 145, 12);
   cursor: pointer;
   position: relative;
   z-index: 0;
