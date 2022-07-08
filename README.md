@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/91999168/178034955-4632a152-0944-44da-
 
 ***
 
-#### *Description*
+### *Description*
 
 Connect Four is a popular game played by kids and adults alike. The rules are simple, yet requires strategy and planning to win the game. 
 
