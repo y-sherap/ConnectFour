@@ -1,19 +1,14 @@
 body {
-  background-color: rgb(0, 0, 0);
-  /* box-shadow:
-  0 0 60px 30px rgb(68, 50, 50),  
-  0 0 100px 60px #f0f, 
-  0 0 140px 90px #0ff; */
-  text-align: center;
+  background-image: url("https://interiordesign.net/wp-content/uploads/2021/12/Interior-Design-4spaces-Aura-idx211001-XTR1_FAB106-1024x1024.jpg");
+  background-size: cover;
   font-family: 'Space Mono', monospace; 
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
   color: white;
 } 
-
-/* h1 {
-  font-size: 4rem;
-} */
 
 h1 {
   display: table-cell;
@@ -22,7 +17,7 @@ h1 {
   font-size: 4rem;
   font-family: 'Space Mono', monospace; 
   color: #eedde0;
-  margin: 0 auto;
+  margin: 2vh;
   text-shadow: 0 0 30px #ec637b,
     0 0 10px rgba(230, 161, 173, 0.41),
     0 0 100px #e6a1ad,
@@ -47,37 +42,87 @@ h1 {
 
 /* blinking title effect: https://codepen.io/bunajianke/pen/NWWdYQJ */
 
-.instructions {
-  background-color: rgb(139, 33, 54);
-  width: 100vh;
-  height: 180vh;
-  margin: 0 auto;
-  justify-content: center;
+.instructionsHeader {
+  align-items: center;
+  width: 800px;
+  height: 600px;
+  margin: 30px;
+  border-width: 20px;
+  border-color: #1111ad;
+  background-color: rgb(37, 15, 181);
+  gap: 5px 5px; 
+  padding: 1rem .5rem;
 }
 
 .howToPlay {
   text-align: left;
 }
 
-/* .btn {
-  background-color: rgb(150, 58, 153);
-  border: rgb(109, 41, 107);
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  color: white;
-  margin: 2rem;
-  padding: 2rem;
-  border-radius: 50%;
-  cursor: pointer;
+h3 {
   text-align: center;
+  margin: 3vh;
+}
+
+p, ol {
+  margin: 1vh;
+}
+button {
+  border: none;
   outline: none;
-  box-shadow: 0 9px rgb(83, 62, 83);
-  }
-  
-  .btn:hover {background-color: #8b2ed3}
-  
-  .btn:active {
-    background-color: rgb(91, 98, 81);
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-} */
+  margin: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background: rgb(145, 140, 198);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+button:before {
+  content: '';
+  background: linear-gradient(45deg, #604a77, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+button:active {
+  color: rgb(14, 38, 78)
+}
+
+button:active:after {
+  background: transparent;
+}
+
+button:hover:before {
+  opacity: 1;
+}
+
+button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}

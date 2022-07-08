@@ -16,7 +16,7 @@ h1 {
   text-align: center;
   font-size: 4rem;
   font-family: 'Space Mono', monospace; 
-  color: #eedde0;
+  color: #dfeedd;
   margin: 10px;
   text-shadow: 0 0 30px #ec637b,
     0 0 10px rgba(230, 161, 173, 0.41),
@@ -41,43 +41,38 @@ h1 {
 }
 
 .gameStatus {
-  /* font-size: 2rem;
-  text-align: center;
-  margin: 1rem;
-  color:rgb(219, 219, 219) */
   text-align: center;
   font-size: 2rem;
   font-family: 'Space Mono', monospace; 
-  color: #eedde0;
+  color: #dfeedd;
   margin: 10px;
-  text-shadow: 0 0 30px #ec637b,
+  text-shadow: 0 0 30px #cb3d57,
     0 0 10px rgba(230, 161, 173, 0.41),
     0 0 100px #e6a1ad,
     0 0 500px #f36789,
     5px 9px 5px rgba(0,0,0,.5);
 
   
-} 
-.board{
-  display: flex;
-  flex-wrap: wrap;
-  width: 600px;
-  height: 520px;
-  margin: 0 auto;
-  justify-content: center;
-  border-width: 20px;
-  border-color: #1111ad;
-  background-color: rgb(37, 15, 181);
-  box-shadow:
-    0 0 80px 30px rgb(50, 42, 42),  /* inner white */
-    0 0 200px 100px rgb(138, 10, 138), /* middle magenta */
-    0 0 140px 90px #0ff; /* outer cyan */
-  gap: 5px 5px;
-  padding: 1rem .5rem;
-} 
+  } 
+  .board{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 520px;
+    margin: 0 auto;
+    justify-content: center;
+    border-width: 20px;
+    border-color: #1111ad;
+    background-color: rgb(37, 15, 181);
+    box-shadow:
+      0 0 80px 30px rgb(50, 42, 42),  /* inner white */
+      0 0 200px 100px rgb(20, 9, 132), /* middle magenta */
+      0 0 140px 90px #0ff; /* outer cyan */
+    gap: 5px 5px;
+    padding: 1rem .5rem;
+  } 
 
 .cell{
-  border: 1px solid rgb(0, 0, 0);
   background-color: rgb(219, 219, 219);
   border-radius: 50%;
   height: 75px;
@@ -85,14 +80,14 @@ h1 {
   cursor: pointer; 
 }  
 
-
 .btn {
   border: none;
   outline: none;
   margin: 2rem;
   padding: 1rem;
+  font-size: 1rem;
   color: #fff;
-  background: #111;
+  background: rgb(145, 140, 198);
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -101,7 +96,7 @@ h1 {
 
 .btn:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #604a77, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
   top: -2px;
   left:-2px;
@@ -117,7 +112,7 @@ h1 {
 }
 
 .btn:active {
-  color: #000
+  color: rgb(14, 38, 78)
 }
 
 .btn:active:after {
