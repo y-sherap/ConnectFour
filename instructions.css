@@ -1,19 +1,51 @@
 body {
-  background-color: rgb(0, 0, 0); */
-  box-shadow:
+  background-color: rgb(0, 0, 0);
+  /* box-shadow:
   0 0 60px 30px rgb(68, 50, 50),  
   0 0 100px 60px #f0f, 
-  0 0 140px 90px #0ff;
+  0 0 140px 90px #0ff; */
   text-align: center;
   font-family: 'Space Mono', monospace; 
   display: flex;
   flex-direction: column;
-  color: rgb(3, 3, 3);
+  color: white;
 } 
 
-h1 {
+/* h1 {
   font-size: 4rem;
+} */
+
+h1 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 4rem;
+  font-family: 'Space Mono', monospace; 
+  color: #eedde0;
+  margin: 0 auto;
+  text-shadow: 0 0 30px #ec637b,
+    0 0 10px rgba(230, 161, 173, 0.41),
+    0 0 100px #e6a1ad,
+    0 0 500px #f36789,
+    5px 9px 5px rgba(0,0,0,.5);
+  animation: flash 1s infinite alternate;
+  transition: all .3s;
 }
+
+@keyframes flash {
+  to {
+    text-shadow: 0 0 30px #EC637B, 
+		0 0 10px rgba(230, 161, 173, 0.41), 
+		0 0 100px #E6A1AD, 
+		0 0 500px #F36780, 
+		5px 9px 5px rgba(0, 0, 0, 0.5);
+  }
+  from {
+    text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* blinking title effect: https://codepen.io/bunajianke/pen/NWWdYQJ */
 
 .instructions {
   background-color: rgb(139, 33, 54);

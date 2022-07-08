@@ -11,16 +11,50 @@ text-align: center;
 font-size: 16px;
 }
 
+
 h1 {
-  font-size: 4rem;
   text-align: center;
+  font-size: 4rem;
+  font-family: 'Space Mono', monospace; 
+  color: #eedde0;
+  margin: 10px;
+  text-shadow: 0 0 30px #ec637b,
+    0 0 10px rgba(230, 161, 173, 0.41),
+    0 0 100px #e6a1ad,
+    0 0 500px #f36789,
+    5px 9px 5px rgba(0,0,0,.5);
+  animation: flash 1s infinite alternate;
+  transition: all .3s;
 }
 
+@keyframes flash {
+  to {
+    text-shadow: 0 0 30px #EC637B, 
+		0 0 10px rgba(230, 161, 173, 0.41), 
+		0 0 100px #E6A1AD, 
+		0 0 500px #F36780, 
+		5px 9px 5px rgba(0, 0, 0, 0.5);
+  }
+  from {
+    text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+  }
+}
 
 .gameStatus {
-  font-size: 2rem;
+  /* font-size: 2rem;
   text-align: center;
   margin: 1rem;
+  color:rgb(219, 219, 219) */
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Space Mono', monospace; 
+  color: #eedde0;
+  margin: 10px;
+  text-shadow: 0 0 30px #ec637b,
+    0 0 10px rgba(230, 161, 173, 0.41),
+    0 0 100px #e6a1ad,
+    0 0 500px #f36789,
+    5px 9px 5px rgba(0,0,0,.5);
 
   
 } 
@@ -31,13 +65,12 @@ h1 {
   height: 520px;
   margin: 0 auto;
   justify-content: center;
-  border-radius: 15%;
   border-width: 20px;
   border-color: #1111ad;
-  background-color: rgb(72, 47, 233);
+  background-color: rgb(37, 15, 181);
   box-shadow:
-    0 0 80px 30px rgb(68, 50, 50),  /* inner white */
-    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 80px 30px rgb(50, 42, 42),  /* inner white */
+    0 0 200px 100px rgb(138, 10, 138), /* middle magenta */
     0 0 140px 90px #0ff; /* outer cyan */
   gap: 5px 5px;
   padding: 1rem .5rem;
@@ -53,7 +86,7 @@ h1 {
 }  
 
 .btn {
-  background-color: rgb(150, 58, 153);
+  background-color: rgba(32, 72, 205, 0.702);
   border: rgb(109, 41, 107);
   font-family: 'Space Mono', monospace;
   font-size: 14px;
