@@ -1,3 +1,4 @@
+
 const gameBoard = document.querySelector(".board");
 const cell = document.querySelectorAll(".cell");
 const button = document.querySelector("button");
@@ -90,9 +91,6 @@ const winningConditions = [
   [38, 39, 40, 41],
 ];
 
-// document.addEventListener("load", () => {
-//   disableCells(false);
-// });
 
 let showWinningMessage = (winningMessage) => {
   gameStatusMessage.innerText = winningMessage

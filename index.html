@@ -4,17 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connect Four Landing Page</title>
+  <link rel="stylesheet" href="instructions.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Poiret+One&family=Rock+Salt&family=Space+Mono&display=swap" rel="stylesheet">
+  <title>Connect Four Instructions</title>
 </head>
-<body>
+<body style="overflow:hidden;">
   <h1> Connect Four </h1>
-  <section class="instructions">
+  <section class="instructionsHeader">
     <h2>Game Instructions</h2>
-    <p>
-      words words words
-    </p>
-  </section>
-  <button onclick="document.location='game.html'""> Play Game</button> 
-  
+    <div class="objective">
+      <h3>Objective</h3>
+        <p>Be the first player to connect 4 of the same colored discs either horizontally, veritcally, or diagonally</li>
+        </p>
+    </div>
+    <div class="howToPlay">
+       <h3>How To Play</h3>
+        <ol>
+          <li>Decide who plays first. That player will be assigned a red disc.</li>
+          <li>Player 2 will be assigned a yellow disc. </li>
+          <li>Player 1 will start the game by clicking on one of the empty white cells on the bottom row.</li>
+          <li>With the exception of the empty cells on the bottom row, players will only be able to place their disc the cell below it has already been played.</li>
+          <li>Players will continue alternating turns until the game ends.</li>
+          <li>The game ends when there are four of the same colored discs in a row or if there is a draw.</li>
+          <li>Players can click on the "Restart" button to play again or reset the board at any time.</li>
+        </ol>
+    </div>
+    <div class="btn">
+      <button onclick="document.location='game.html'">Play Game</button> 
+    </div>
+  </section>  
 </body>
 </html>

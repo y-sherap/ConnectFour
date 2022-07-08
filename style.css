@@ -8,8 +8,8 @@ background-color: rgb(0, 0, 0);
 color: rgb(255, 255, 255);
 font-family: 'Space Mono', monospace; 
 text-align: center;
-font-size: 16px
-} 
+font-size: 16px;
+}
 
 h1 {
   font-size: 4rem;
@@ -27,39 +27,50 @@ h1 {
 .board{
   display: flex;
   flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: calc(600px / 7) calc(600px / 7) calc(600px / 7) calc(600px / 7) calc(600px / 7) calc(600px / 7) calc(600px / 7) ;
-  grid-template-rows: calc(520px / 6) calc(520px / 6) calc(520px / 6) calc(520px / 6) calc(520px / 6) calc(520px / 6) */
   width: 600px;
   height: 520px;
   margin: 0 auto;
   justify-content: center;
-  background-color: rgb(113, 37, 37); 
+  border-radius: 15%;
+  border-width: 20px;
+  border-color: #1111ad;
+  background-color: rgb(72, 47, 233);
+  box-shadow:
+    0 0 80px 30px rgb(68, 50, 50),  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff; /* outer cyan */
   gap: 5px 5px;
   padding: 1rem .5rem;
 } 
 
 .cell{
-  /* border: 5px solid rgb(0, 0, 0); */
-  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(219, 219, 219);
   border-radius: 50%;
-  /* outline: 3px solid black; */
   height: 75px;
   width: 75px;
   cursor: pointer; 
 }  
 
 .btn {
-  background-color: rgb(185, 247, 93);
-  border: rgb(185, 247, 93);
+  background-color: rgb(150, 58, 153);
+  border: rgb(109, 41, 107);
   font-family: 'Space Mono', monospace;
   font-size: 14px;
+  color: white;
   margin: 2rem;
   padding: 2rem;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.footer {
-  display: inline;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 9px rgb(83, 62, 83);
+  }
+  
+  .btn:hover {background-color: #8b2ed3}
+  
+  .btn:active {
+    background-color: rgb(91, 98, 81);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
